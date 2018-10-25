@@ -13,38 +13,38 @@
 </template>
 <script>
 	export default{
-		props:{
-			filter:{
-				type:String,
-				required:true,
-			},
-			todos:{
-				type:Array,
-				required:true,
-			}
+	  props: {
+	    filter: {
+	      type: String,
+	      required: true
+	    },
+	    todos: {
+	      type: Array,
+	      required: true
+	    }
 
-		},
-		computed:{
-			unFinishedTodoLength(){
-				return this.todos.filter(todo => !todo.completed).length;
-			}
+	  },
+	  computed: {
+	    unFinishedTodoLength () {
+	      return this.todos.filter(todo => !todo.completed).length
+	    }
 
-		},
-		data(){
-			return{
-				states:['all','active','completed']
-			}
-		},
-		methods:{
-			clearCompleted(){
-				this.$emit('clearAllCompleted');
-			},
-			toggleFilter(state){
-				this.$emit('toggle',state);
-			},
-		}
+	  },
+	  data () {
+	    return {
+	      states: ['all', 'active', 'completed']
+	    }
+	  },
+	  methods: {
+	    clearCompleted () {
+	      this.$emit('clearAllCompleted')
+	    },
+	    toggleFilter (state) {
+	      this.$emit('toggle', state)
+	    }
+	  }
 
-	};
+	}
 </script>
 
 <style lang='less' scoped>

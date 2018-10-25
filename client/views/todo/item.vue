@@ -11,18 +11,18 @@
 
 <script>
 	export default{
-		props:{
-			todo:{
-				type:Object,
-				required:true,
-			}
-		},
-		methods:{
-			deleteTodo(){
-				this.$emit('del',this.todo.id);
-			}
-		}
-	};
+	  props: {
+	    todo: {
+	      type: Object,
+	      required: true
+	    }
+	  },
+	  methods: {
+	    deleteTodo () {
+	      this.$emit('del', this.todo.id)
+	    }
+	  }
+	}
 </script>
 <style lang='less' scoped>
 	.todo-item{
@@ -55,10 +55,10 @@
         	padding-left: 5px;
         	cursor: pointer;
         	&:after{
-	            content: url('../images/round.svg')
+	            content: url('../../assets/images/round.svg')
 	        }
 	        &:checked:after{
-	            content: url('../images/done.svg')
+	            content: url('../../assets/images/done.svg')
 	        }
         }
 

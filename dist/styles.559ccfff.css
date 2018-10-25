@@ -1,0 +1,171 @@
+
+#app[data-v-deab5fae] {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#app #cover[data-v-deab5fae] {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #999;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.main-header[data-v-f799772a] {
+  text-align: center;
+}
+.main-header h1[data-v-f799772a] {
+  font-size: 100px;
+  color: rgba(175, 47, 47, 0.4);
+  font-weight: 100;
+  margin: 20px;
+}
+#footer {
+  text-align: center;
+  margin-top: 40px;
+  color: black;
+  font-size: 10px;
+}
+
+.todo-item[data-v-1b2bc133] {
+  position: relative;
+  background-color: #fff;
+  font-size: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.todo-item:hover .destory[data-v-1b2bc133] {
+  visibility: visible;
+}
+.todo-item.completed label[data-v-1b2bc133] {
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+.todo-item .toggle[data-v-1b2bc133] {
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding-left: 5px;
+  cursor: pointer;
+}
+.todo-item .toggle[data-v-1b2bc133]:after {
+  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iLTEwIC0xOCAxMDAgMTM1Ij48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZWRlZGVkIiBzdHJva2Utd2lkdGg9IjMiLz48L3N2Zz4=);
+}
+.todo-item .toggle[data-v-1b2bc133]:checked:after {
+  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iLTEwIC0xOCAxMDAgMTM1Ij48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmRkYWQ1IiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBmaWxsPSIjNWRjMmFmIiBkPSJNNzIgMjVMNDIgNzEgMjcgNTZsLTQgNCAyMCAyMCAzNC01MnoiLz48L3N2Zz4=);
+}
+.todo-item label[data-v-1b2bc133] {
+  white-space: pre-line;
+  word-break: keep-all;
+  padding: 15px;
+  margin-left: 45px;
+  transition: color 0.5s;
+  display: block;
+}
+.todo-item .destory[data-v-1b2bc133] {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  font-size: 30px;
+  color: #cc9a9a;
+  transition: color 0.2s ease-out;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.helper[data-v-746e2dac] {
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  line-height: 30px;
+  background-color: #fff;
+  font-size: 14px;
+  font-smoothing: antialiased;
+}
+.helper .left[data-v-746e2dac],
+.helper .clear[data-v-746e2dac],
+.helper .tabs[data-v-746e2dac] {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.helper .left[data-v-746e2dac],
+.helper .clear[data-v-746e2dac] {
+  width: 150px;
+}
+.helper .left[data-v-746e2dac] {
+  text-align: left;
+}
+.helper .clear[data-v-746e2dac] {
+  text-align: right;
+  cursor: pointer;
+}
+.helper .tabs[data-v-746e2dac] {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.helper .tabs *[data-v-746e2dac] {
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+  border: 1px solid rgba(175, 47, 47, 0);
+}
+.helper .tabs *.actived[data-v-746e2dac] {
+  border-color: rgba(175, 47, 47, 0.4);
+  border-radius: 5px;
+}
+
+.real-app[data-v-72ca8935] {
+  width: 600px;
+  margin: 0 auto;
+}
+.real-app .add-input[data-v-72ca8935] {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 1.4em;
+  border: none;
+  outline: none;
+  color: inherit;
+  box-sizing: border-box;
+  padding: 16px 16px 16px 36px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-image: url(resources/client/assets/images/01.f8ae118d60093d2cadc6fc4877b40ac3.jpg);
+  background-size: cover;
+  background-position: center;
+  font: 14px 'microsoft yahei';
+  color: #333333;
+  font-weight: 500;
+}

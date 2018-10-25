@@ -3,24 +3,29 @@
 	<div id="app">
 		<div id="cover"></div>
 		<Header></Header>
-		<Todo></Todo>
+		<!-- <Todo></Todo> -->
+		<router-link to='/app'>app</router-link>
+		<router-link to='/login'>login</router-link>
+	<!-- 	添加过度动画 -->
+	  <transition name='fade'>
+			<router-view></router-view>
+		</transition>
 		<Footer></Footer>
 
 	</div>
 </template>
 
 <script>
-import Header from './todo/header.vue';
-import Footer from './todo/footer.jsx';
-import Todo from './todo/todo.vue';
+import Header from './layout/header.vue'
+import Footer from './layout/footer.jsx'
+import Todo from './views/todo/todo.vue'
 export default{
-	components:{
-		Header,
-		Footer,
-		Todo,
-	}
-};
-	
+  components: {
+    Header,
+    Footer,
+    Todo
+  }
+}
 </script>
 
 <style lang='less' scoped>
@@ -41,6 +46,5 @@ export default{
 		opacity: 0.2;
 		z-index: -1;
 	}
-}
-	
+}	
 </style>
