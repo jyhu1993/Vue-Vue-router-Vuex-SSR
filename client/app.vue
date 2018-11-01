@@ -11,10 +11,8 @@
 			<router-view></router-view>
 		</transition>
 		<Footer></Footer>
-
 	</div>
 </template>
-
 <script>
 import Header from './layout/header.vue'
 import Footer from './layout/footer.jsx'
@@ -45,6 +43,6 @@ export default{
 		background-color: #999;
 		opacity: 0.2;
 		z-index: -1;
-	}
+		}
 }	
 </style>
